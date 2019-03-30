@@ -167,7 +167,7 @@ class Base
      * @param string $xml
      * @throws \InvalidArgumentException
      */
-    public function getXmlData($xml)
+    protected function getXmlData($xml)
     {
         $dom = new \DOMDocument('1.0', 'UTF-8');
         $dom->preserveWhiteSpace = false;
